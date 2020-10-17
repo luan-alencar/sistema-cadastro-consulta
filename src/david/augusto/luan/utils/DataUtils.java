@@ -17,6 +17,11 @@ public class DataUtils {
 	 * @return
 	 */
 
+	private static final int DAY_OF_MONTH = 0;
+	private static final int MONTH = 0;
+	private static final int YEAR = 0;
+	private static final int DAY_OF_WEEK = 0;
+
 	public static Date adicionarDias(Date data, int dia) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(data);
