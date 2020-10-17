@@ -8,11 +8,10 @@ public class Consulta {
 	private Date dataConsulta;
 	private Date dataRetorno;
 
-	public Consulta(Paciente paciente, Medico medico, Date dataConsulta, Date dataRetorno) {
+	public Consulta(Paciente paciente, Medico medico, Date dataConsulta) {
 		this.paciente = paciente;
 		this.medico = medico;
 		this.dataConsulta = dataConsulta;
-		this.dataRetorno = dataRetorno;
 	}
 
 	public Paciente getPaciente() {

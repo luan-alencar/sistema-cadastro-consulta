@@ -1,14 +1,25 @@
 package david.augusto.luan.entidades;
 
 public class Paciente extends Usuario {
+	private int nextRegistration = 0;
 
 	private int idPaciente;
 	private int dataNascimento;
 	private String nome;
-	private int idUsuario;
+	private String cpf;
 
-	public Paciente(int id, boolean ativo, String email, String senha) {
-		super(id, ativo, email, senha);
+	public Paciente(String nome, String cpf) {
+		super(nome, cpf);
+		this.idPaciente = nextRegistration;
+		nextRegistration++;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
 	public int getIdPaciente() {
@@ -33,14 +44,6 @@ public class Paciente extends Usuario {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public int getIdUsuario() {
-		return idUsuario;
-	}
-
-	public void setIdUsuario(int idUsuario) {
-		this.idUsuario = idUsuario;
 	}
 
 }

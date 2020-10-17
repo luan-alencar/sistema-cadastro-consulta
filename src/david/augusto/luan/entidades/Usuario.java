@@ -1,48 +1,29 @@
 package david.augusto.luan.entidades;
 
 public abstract class Usuario {
-	private int id;
-	private boolean ativo;
-	private String email;
-	private String senha;
 
-	public Usuario(int id, boolean ativo, String email, String senha) {
-		this.id = id;
-		this.ativo = ativo;
-		this.email = email;
-		this.senha = senha;
+	private String nome;
+	private String cpf;
+
+	public Usuario(String nome, String cpf) {
+		this.nome = nome;
+		this.cpf = cpf;
 	}
 
-	public int getId() {
-		return id;
+	public String getnome() {
+		return nome;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setnome(String nome) {
+		this.nome = nome;
 	}
 
-	public boolean isAtivo() {
-		return ativo;
+	public String getcpf() {
+		return cpf;
 	}
 
-	public void setAtivo(boolean ativo) {
-		this.ativo = ativo;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setcpf(String cpf) {
+		this.cpf = cpf;
 	}
 
 }
