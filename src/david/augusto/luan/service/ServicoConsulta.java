@@ -23,7 +23,12 @@ public class ServicoConsulta {
 		ServicoConsulta servico = new ServicoConsulta();
 		Paciente p1 = new Paciente("Fulano", "12341234");
 		Medico m1 = new Medico("Dr. Beltrado", new Especialidade("Oftamologista"));
-		
-		Consulta consulta = servico.realizarConsulta(p1, m1); 
+
+		Consulta consulta = servico.realizarConsulta(p1, m1);
+
+		System.out.println(consulta.getPaciente().getNome());
+		System.out.println(consulta.getMedico().getNome());
+		System.out.println(consulta.getDataConsulta());
+		System.out.println(consulta.getDataRetorno());
 	}
 }
