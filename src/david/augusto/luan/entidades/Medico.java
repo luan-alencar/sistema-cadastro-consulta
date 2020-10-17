@@ -14,7 +14,7 @@ public class Medico extends Usuario {
 		this.idMedico = nextRegistration;
 		nextRegistration++;
 	}
-
+	
 	public int getNextRegistration() {
 		return nextRegistration;
 	}

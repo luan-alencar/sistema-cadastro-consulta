@@ -22,6 +22,8 @@ public class ServicoConsulta {
 
 		ServicoConsulta servico = new ServicoConsulta();
 		Paciente p1 = new Paciente("Fulano", "12341234");
-		Medico m1 = new Medico("Dr. Beltrado");
+		Medico m1 = new Medico("Dr. Beltrado", new Especialidade("Oftamologista"));
+		
+		Consulta consulta = servico.realizarConsulta(p1, m1); 
 	}
 }
