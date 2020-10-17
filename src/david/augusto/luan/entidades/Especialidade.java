@@ -4,9 +4,8 @@ public class Especialidade {
 	private String especialidade;
 	private Medico medico;
 
-	public Especialidade(String especialidade, Medico medico) {
+	public Especialidade(String especialidade) {
 		this.especialidade = especialidade;
-		this.medico = medico;
 	}
 
 	public String getEspecialidade() {
@@ -15,14 +14,6 @@ public class Especialidade {
 
 	public void setEspecialidade(String especialidade) {
 		this.especialidade = especialidade;
-	}
-
-	public Medico getMedico() {
-		return medico;
-	}
-
-	public void setMedico(Medico medico) {
-		this.medico = medico;
 	}
 
 }

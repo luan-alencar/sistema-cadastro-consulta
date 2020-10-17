@@ -21,6 +21,7 @@ public class ServicoConsulta {
 	public static void main(String[] args) {
 
 		ServicoConsulta servico = new ServicoConsulta();
-		Paciente p1 = new Paciente()
+		Paciente p1 = new Paciente("Fulano", "12341234");
+		Medico m1 = new Medico("Dr. Beltrado");
 	}
 }
